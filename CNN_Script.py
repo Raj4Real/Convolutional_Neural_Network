@@ -61,12 +61,12 @@ zoom_range = 0.2,
 horizontal_flip = True)
 
 test_datagen = ImageDataGenerator(rescale = 1./255)
-training_set = train_datagen.flow_from_directory('dataset/new/training_set',
+training_set = train_datagen.flow_from_directory('dataset//training_set',
 target_size = (64, 64),
 batch_size = 64,
 class_mode = 'binary')
 
-test_set = test_datagen.flow_from_directory('dataset/new/test_set',
+test_set = test_datagen.flow_from_directory('dataset//test_set',
 target_size = (64, 64),
 batch_size = 64,
 class_mode = 'binary')
@@ -133,9 +133,9 @@ prediction_array = []
 counter = 0
 while counter < 100 :
     counter += 1    
-    path = os.path.join('dataset/single_prediction/sober_untouched/',str(counter))
-    #path = os.path.join('dataset/single_prediction/stoned_untouched/',str(counter))
-    #path = os.path.join('dataset/test_set/stoned/',str(counter))
+    path = os.path.join('image_name/',str(counter))
+    #path = os.path.join('image_name/',str(counter))
+    #path = os.path.join('image_name/',str(counter))
     extension = '.jpg'
     path = path+extension
     test_image = image.load_img(path, target_size = (64, 64))
@@ -157,7 +157,7 @@ i = len(prediction_array)
 n = 0
 count = 0
 while n < i:
-    if prediction_array[n] == 'stoned':
+    if prediction_array[n] == 'Intoxicated':
         n += 1
         count += 1
     else:
@@ -169,7 +169,7 @@ i = len(prediction_array)
 n = 0
 count = 0
 while n < i:
-    if prediction_array[n] == 'sober':
+    if prediction_array[n] == 'Sober':
         n += 1
         count += 1
     else:
