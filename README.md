@@ -1,8 +1,8 @@
 # Classifying Sober and Intoxicated images using CNN
 
-File Structure
-/Classifier/
-  /Script.py
-  /dataset
-    /training_set
-    /Validation_set
+File Structure </br>
+/Classifier/ </br>
+  /Script.py </br>
+  /dataset </br>
+    /training_set </br>
+    /Validation_set </br>
