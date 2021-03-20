@@ -7,6 +7,6 @@ File Structure </br>
   /Script.py </br>
   /dataset </br>
     /training_set </br>
-    /Validation_set </br>
+    /validation_set </br>
     
 </pre>
