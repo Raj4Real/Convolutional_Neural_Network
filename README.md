@@ -1,6 +1,6 @@
 # Classifying Sober and Intoxicated images using CNN
 
-File Structure </br>
+Directory Structure </br>
 <pre>
 
 /Classifier/ </br>
